@@ -383,8 +383,17 @@
 <ul>
 <li>datatype：数组元素类型。</li>
 <li>[ ] 指定数组的秩（维度）。秩指定数组的大小。</li>
-<li>arrayName：数组名<br>例：<br><pre><br>int[]nums;<br></pre>  <h3 id="2、初始化数组"><a href="#2、初始化数组" class="headerlink" title="2、初始化数组"></a>2、初始化数组</h3>声明一个数组不会在内存中开辟空间，当初始化数组变量时，你可以赋值给数组。<br>数组是一个引用类型，所以要使用new关键字来创建实例。<br>例：<br><pre><br>string[] numbers=new string[10];<br></pre><br>赋值给数组<br><pre><br>string[] numbers=new string[10];<br>numbers[0]=1;<br></pre><br>也可以在声明数组的同时给数组赋值，比如：<br><pre><code>int[] numbers={1,2,3,4,5};</code></pre><h3 id="3、访问数组元素"><a href="#3、访问数组元素" class="headerlink" title="3、访问数组元素"></a>3、访问数组元素</h3>通过元素的索引来获取的值。<br><pre><code>int[] nums={3,6,9};<br>int QTY=nums[0];</code></pre><br>下面新建控制台程序通过实例来巩固前面的三条知识<br><pre><code><br>using System;<br>using System.Collections.Generic;<br>using System.Linq;<br>using System.Text;</code></pre></li>
+<li>arrayName：数组名</li>
 </ul>
+<p>例：</p>
+<p><pre><code><br>int[]nums;<br></code></pre>  </p>
+<h3 id="2、初始化数组"><a href="#2、初始化数组" class="headerlink" title="2、初始化数组"></a>2、初始化数组</h3><p>声明一个数组不会在内存中开辟空间，当初始化数组变量时，你可以赋值给数组。<br>数组是一个引用类型，所以要使用new关键字来创建实例。<br>例：    </p>
+<p><pre><br>string[] numbers=new string[10];<br></pre><br>赋值给数组</p>
+<p><pre><br>string[] numbers=new string[10];<br>numbers[0]=1;<br></pre><br>也可以在声明数组的同时给数组赋值，比如：</p>
+<p><pre><code>int[] numbers={1,2,3,4,5};</code></pre></p>
+<h3 id="3、访问数组元素"><a href="#3、访问数组元素" class="headerlink" title="3、访问数组元素"></a>3、访问数组元素</h3><p>通过元素的索引来获取的值。</p>
+<p><pre><code>int[] nums={3,6,9};<br>int QTY=nums[0];</code></pre><br>下面新建控制台程序通过实例来巩固前面的三条知识</p>
+<p><pre><code><br>using System;<br>using System.Collections.Generic;<br>using System.Linq;<br>using System.Text;</code></pre></p>
 <p>namespace ConsoleApplication1<br>{<br>    class Program<br>    {<br>        static void Main(string[] args)<br>        {<br>            int[] nums = new int[10];<br>            int i, j;<br>            //初始化数组nums的元素<br>            for (i = 0; i &lt; 10; i++)<br>            {<br>                nums[i] = i + 10;<br>            }<br>            //输出每个元素的值<br>            for (j = 0; j &lt; 10;j++ )<br>            {<br>                Console.WriteLine(“索引：{0} 值：{1}”, j, nums[j]);<br>            }<br>            Console.ReadKey();<br>        }<br>    }<br>}<br><br>执行结果：<br><img src="http://okzj2hhr8.bkt.clouddn.com/.NET%E5%9F%BA%E7%A1%80%E5%9B%9E%E9%A1%BE%E4%B9%8B%E6%95%B0%E7%BB%842.png" alt=""></p>
 
           
